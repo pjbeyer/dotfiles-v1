@@ -10,10 +10,11 @@
     ~/.local/bin:
     ~/.local/share:
     ~/.local/state:
+    ~/Library/LaunchAgents:
     ~/Projects:
 
 - shell:
-    - command: chmod 0700 ~/.config ~/.config/git ~/Projects
+    - command: chmod 0700 ~/.config ~/.config/git ~/Library/LaunchAgents ~/Projects
       description: Setting directory permissions
       quiet: true
     - command: if [[ ! -e ~/Projects/dotfiles ]]; then mv "$PWD" ~/Projects/dotfiles; fi
