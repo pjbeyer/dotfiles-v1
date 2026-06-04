@@ -12,3 +12,10 @@ export GPG_TTY=$(tty)
 # Set location for the XCode Python "site.USER_BASE" variable
 # Add the "--user" option to `pip install`
 export PYTHONUSERBASE=~/.local
+
+# Non-interactive GitHub/git defaults
+# - git: fail fast instead of asking for terminal credentials
+# - gh: fail fast instead of prompting for login/input
+export GIT_TERMINAL_PROMPT=0
+export GH_PROMPT_DISABLED=1
+export GCM_INTERACTIVE=never
