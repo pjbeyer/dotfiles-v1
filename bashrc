@@ -22,3 +22,8 @@ fi
 if [ -e $XDG_CONFIG_HOME/local/bash/bashrc ]; then
   source $XDG_CONFIG_HOME/local/bash/bashrc
 fi
+
+alias claude-mem='bun "/Users/pjbeyer/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
+
+. "$HOME/.local/bin/env"
+[ -f ~/.spawnrc ] && source ~/.spawnrc
